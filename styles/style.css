@@ -1,27 +1,31 @@
 
 @media (max-width: 767.98px){
-        nav{height:72px !important; padding:12px 16px !important;}
-        .top-actions .btn{height:40px !important; font-size:14px !important; padding-left:12px; padding-right:12px;}
-        .top-actions img{width:20px !important; height:20px !important;}
-        .hero-section{min-height:320px !important; text-align:center;} /* increased height */
-        .hero-section p{max-width:90%; margin:0 auto; line-height:1.4;}
-        main{min-height:100vh !important; height:auto !important;} /* auto height */
-        .main-wrap{flex-direction:column !important;}
-        .card-section{grid-template-columns:1fr !important; gap:20px !important; height:auto !important;} /* auto height */
-        .card-section > div{max-width:100% !important; height:auto !important;}
-        .call-history{width:100% !important; height:auto !important; margin-top:16px;}
-      }
-      /* Medium (768–1023px) */
-      @media (min-width:768px) and (max-width:1023.98px){
-        .hero-section{min-height:280px !important;} /* taller banner */
-        .main-wrap{flex-direction:row !important; align-items:stretch !important;}
-        .card-section{grid-template-columns:repeat(2, minmax(0,1fr)) !important; height:auto !important;}
-        .call-history{height:auto !important;}
-      }
-      /* Large (≥1024px) */
-      @media (min-width:1024px){
-        .hero-section{min-height:260px !important;} /* keep good banner height */
-        .main-wrap{flex-direction:row !important;}
-        .card-section{grid-template-columns:repeat(3, minmax(0,1fr)) !important; height:auto !important;}
-        main{min-height:100vh !important; height:auto !important;}
-      }
+  .hide-mobile { display: none !important; }
+
+  nav{height:72px !important; padding:12px 16px !important;}
+  .top-actions .btn{height:40px !important; font-size:14px !important; padding-left:12px; padding-right:12px;}
+  .top-actions img{width:20px !important; height:20px !important;}
+  .hero-section{min-height:320px !important; text-align:center;}
+  .hero-section p{max-width:90%; margin:0 auto; line-height:1.4;}
+  main{min-height:100vh !important; height:auto !important;}
+  .main-wrap{flex-direction:column !important;}
+  .card-section{grid-template-columns:1fr !important; gap:20px !important; height:auto !important;}
+  .card-section > div{max-width:100% !important; height:auto !important;}
+  .call-history{width:100% !important; height:auto !important; margin-top:16px;}
+}
+
+/* Medium (768–1023px) */
+@media (min-width:768px) and (max-width:1023.98px){
+  .hero-section{min-height:280px !important;}
+  .main-wrap{flex-direction:row !important; align-items:stretch !important;}
+  .card-section{grid-template-columns:repeat(2, minmax(0,1fr)) !important; height:auto !important;}
+  .call-history{height:auto !important;}
+}
+
+/* Large (≥1024px) */
+@media (min-width:1024px){
+  .hero-section{min-height:260px !important;}
+  .main-wrap{flex-direction:row !important;}
+  .card-section{grid-template-columns:repeat(3, minmax(0,1fr)) !important; height:auto !important;}
+  main{min-height:100vh !important; height:auto !important;}
+}
